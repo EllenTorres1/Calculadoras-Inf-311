@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewValor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="160dp"
+        android:text="@string/Valor1" />
+
+    <EditText
+        android:id="@+id/EditTextValor1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewValor1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextValor1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="160dp"
+        android:text="@string/Valor2" />
+
+    <EditText
+        android:id="@+id/EditTextValor2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewValor2"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewValor2"
+        android:layout_marginTop="311dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="160dp"
+        android:text="@string/Result" />
+
+
+    <Button
+        android:id="@+id/buttonSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextValor2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/Soma" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextValor2"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@id/buttonSoma"
+        android:text="@string/Sub" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextValor2"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@id/buttonSub"
+        android:text="@string/Mul" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextValor2"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@id/buttonMul"
+        android:text="@string/Div" />
+
+</RelativeLayout>

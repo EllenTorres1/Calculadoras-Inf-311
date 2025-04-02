@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora 1</string>
+    <string name="Valor1">Valor  1</string>
+    <string name="Valor2">Valor 2</string>
+    <string name="Result">O resultado é:</string>
+    <string name="Soma">+</string>
+    <string name="Sub">-</string>
+    <string name="Mul">*</string>
+    <string name="Div">/</string>
+</resources>
