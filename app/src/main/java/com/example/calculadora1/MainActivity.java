@@ -6,7 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View;
 
-//Teste 3
+//Teste 4
 
 public class MainActivity extends Activity {
     private EditText editTextValor1;
