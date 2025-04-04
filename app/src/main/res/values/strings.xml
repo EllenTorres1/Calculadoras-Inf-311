@@ -7,4 +7,5 @@
     <string name="Sub">-</string>
     <string name="Mul">*</string>
     <string name="Div">/</string>
+    <string name ="Teste">teste</string>
 </resources>
