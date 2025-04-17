@@ -1,184 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/textViewResult"
-        android:layout_width="362dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginEnd="28dp"
+        android:layout_margin="16dp"
         android:textSize="40sp"
+        android:background="@color/Dark_grey" />
 
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="181dp"
-        android:background="@color/Dark_grey"/>
+
     <Button
         android:id="@+id/Num7"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:background="@color/grey"
-        android:text="@string/Num7"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="@string/Num7" />
 
     <Button
         android:id="@+id/Num8"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num7"
+        android:layout_alignTop="@id/Num7"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num8"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="@string/Num8" />
 
     <Button
         android:id="@+id/Num9"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num8"
+        android:layout_alignTop="@id/Num7"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num9"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="@string/Num9" />
 
     <Button
         android:id="@+id/Div"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num9"
+        android:layout_alignTop="@id/Num7"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Div"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="@string/Div" />
 
     <Button
         android:id="@+id/backspace"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Div"
+        android:layout_alignTop="@id/Num7"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="<<"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:text="<<" />
 
     <Button
         android:id="@+id/Num4"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_below="@id/Num7"
+        android:layout_alignStart="@id/Num7"
+        android:layout_marginTop="5dp"
         android:background="@color/grey"
-        android:text="@string/Num4"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:text="@string/Num4" />
 
     <Button
         android:id="@+id/Num5"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num4"
+        android:layout_alignTop="@id/Num4"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num5"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:text="@string/Num5" />
 
     <Button
         android:id="@+id/Num6"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num5"
+        android:layout_alignTop="@id/Num4"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num6"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="327dp" />
-
+        android:text="@string/Num6" />
 
     <Button
         android:id="@+id/Mul"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num6"
+        android:layout_alignTop="@id/Num4"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Mul"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:text="@string/Mul" />
 
     <Button
         android:id="@+id/Apaga"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Mul"
+        android:layout_alignTop="@id/Num4"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Apaga"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:text="@string/Apaga" />
+
+
     <Button
         android:id="@+id/Num1"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_below="@id/Num4"
+        android:layout_alignStart="@id/Num4"
+        android:layout_marginTop="5dp"
         android:background="@color/grey"
-        android:text="@string/Num1"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:text="@string/Num1" />
 
     <Button
         android:id="@+id/Num2"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num1"
+        android:layout_alignTop="@id/Num1"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num2"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:text="@string/Num2" />
+
     <Button
         android:id="@+id/Num3"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num2"
+        android:layout_alignTop="@id/Num1"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Num3"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:text="@string/Num3" />
 
     <Button
         android:id="@+id/Sub"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num3"
+        android:layout_alignTop="@id/Num1"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Sub"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:text="@string/Sub" />
 
     <Button
         android:id="@+id/Igual"
         android:layout_width="70dp"
         android:layout_height="145dp"
+        android:layout_toEndOf="@id/Sub"
+        android:layout_alignTop="@id/Num1"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Igual"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:text="@string/Igual" />
+
 
     <Button
         android:id="@+id/Num0"
         android:layout_width="140dp"
         android:layout_height="70dp"
+        android:layout_below="@id/Num1"
+        android:layout_alignStart="@id/Num1"
+        android:layout_marginTop="5dp"
         android:background="@color/grey"
-        android:text="@string/Num0"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="477dp" />
-
+        android:text="@string/Num0" />
 
     <Button
         android:id="@+id/Ponto"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Num0"
+        android:layout_alignTop="@id/Num0"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Ponto"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="477dp" />
+        android:text="@string/Ponto" />
 
     <Button
         android:id="@+id/Soma"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_toEndOf="@id/Ponto"
+        android:layout_alignTop="@id/Num0"
+        android:layout_marginStart="5dp"
         android:background="@color/grey"
-        android:text="@string/Soma"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="477dp" />
+        android:text="@string/Soma" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
